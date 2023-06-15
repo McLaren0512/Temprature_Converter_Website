@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/apple-touch-icon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <!-- Navbar Starts Here -->
+        <nav class="navbar navbar-expand-lg navbar-dark d-lg-block"
+            style="z-index: 2000;background-color: rgb(85, 173, 255);">
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <a class="navbar-brand nav-link" target="_blank"
+                    href="aniketrajsingh.github.io/OIBGRIP/Temprature_Converter">
+                    <strong>Temprature Converter</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#intro">Converter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav d-flex flex-row">
+                        <!-- Icons -->
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://www.instagram.com/aniket.raj.singh" rel="nofollow"
+                                target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://www.linkedin.com/in/aniket-singh-5ba125168" rel="nofollow"
+                                target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://github.com/AniketRajSingh" rel="nofollow" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Ends Here -->
+    </nav>
+    <!-- Temprature Converter App -->
+    <section id="intro">
+        <div id="converterapp">
+            <div class="appform">
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Temprature Converter App -->
+                        <legend>Temprature Converter Application</legend>
+
+                        <!--input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="input">Temprature to Convert : </label>
+                            <div class="col-md-12">
+                                <input id="input" name="input" type="number" placeholder="Temprature"
+                                    class="form-control input-md" required="true">
+
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="unit">Select Unit :</label>
+                            <div class="col-md-12">
+                                <select id="unit" name="unit" class="form-control">
+                                    <option value="Celsius">Celsius</option>
+                                    <option value="Fahrenheit">Fahrenheit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <button onclick="mainfn()" id="singlebutton" name="singlebutton" type="button"
+                                    class="btn btn-primary">Convert</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+                <label class="col-md-4 control-label" for="input">Output : </label>
+                <div class="result" id="result">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <div style="font-family:monospace;" id="about" class="about p-4">
+            <img id="ShrutiPic"
+                src="assets/img/IMG20220828154131.jpg"
+                alt="MyImage">
+            <div>
+                <h3>Hii, there I'ts Me Shruti</h3>
+                <h4> I am a CSE Student at VIT</h4>
+                <p>Here's a project that belongs to Me, Shruti Srivastav, This project is a basic Temprature Converter Web
+                    Application.</p>
+                <p>In this Project the we can do basic calculations using the javascript based calculator.</p>
+                <h4>Instructions</h4>
+                <li>Give the <b> Temprature Input</b> in the above Input Box</li><br>
+                <li>Choose the <b> Temprature Unit</b> you want to convert the temprature to get converted to. </li><br>
+                <li>Use the button to do the calculations.</li>
+                <br>
+                <h5>Hope You Will Like the Project, for any query or suggestion use my contacts linked below.</h5>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me Section -->
+    <!--Section: Content-->
+    <section class="mb-5" id="contact">
+        <h4 class="mb-5 text-center"><strong>Contact Me</strong></h4>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="form-control" />
+                                <label class="form-label">First name</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="form-control" />
+                                <label class="form-label">Last name</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" class="form-control" />
+                        <label class="form-label">Email address</label>
+                    </div>
+
+                    <!-- Text input -->
+                    <div class="form-group">
+                        <textarea class="form-control" id="textarea" name="textarea"
+                            placeholder="Your Text Here" style="height:25vh;"></textarea><br>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                        Send Message
+                    </button>
+
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                        <p>Or Sign Up for more with:</p>
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Section: Content-->
+    <!--Footer-->
+    <footer class="bg-light text-lg-start">
+        <div class="text-center py-4 align-items-center">
+            <p>Follow Me on social media</p>
+            <a href="https://www.instagram.com/aniket.raj.singh" class="btn btn-primary m-1" role="button"
+                rel="nofollow" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aniket-singh-5ba125168" class="btn btn-primary m-1" role="button"
+                rel="nofollow" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AniketRajSingh" class="btn btn-primary m-1" role="button" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #56ADFF;color: white;">
+            © 2022 Copyright:
+            <a class="text-white" href="aniketrajsingh.github.io/OIBGRIP/Portfolio/">Shruti Srivastav</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/JavaScript/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+</body>
+
+</html>
